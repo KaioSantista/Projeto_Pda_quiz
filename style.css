@@ -1,3 +1,42 @@
-h1{
-    color: aqua;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+}
+
+#contentQuiz {
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content {
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#answerContent {
+    display: flex;
+    gap: 52px;
+    align-items: center;
+    
+}
+
+.answer {
+    border: 2px solid blueviolet;
+    padding: 5px;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 9px;
 }

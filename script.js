@@ -1,2 +1,1 @@
-
-console.log("bora começar o projeto pessoal")
+let vfvt = 2
