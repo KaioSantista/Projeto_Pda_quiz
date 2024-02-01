@@ -5,10 +5,10 @@ let pergunta = [
         Questao:"2+2=",
         Alternativas:[
             
-              {Alternativa:"4",resposta:true},
-              {Alternativa:"6",resposta:false},
-              {Alternativa:"2",resposta:false},
-              {Alternativa:"8",resposta:false}
+              {Alternativa:"A:4"},
+              {Alternativa:"B:6"},
+              {Alternativa:"C:2"},
+              {Alternativa:"D:8"}
             
 
         ]},
@@ -17,10 +17,10 @@ let pergunta = [
          Questao:"5*3=",
          Alternativas:
             [
-              {Alternativa:"10",resposta:false},
-              {Alternativa:"15",resposta:true},
-              {Alternativa:"8",resposta:false},
-              {Alternativa:"9",resposta:false}
+              {Alternativa:"A:10"},
+              {Alternativa:"B:15"},
+              {Alternativa:"C:8"},
+              {Alternativa:"D:9"}
             
 
             ]
@@ -30,10 +30,10 @@ let pergunta = [
          Questao:"100/10=",
          Alternativas:
             [
-              {Alternativa:"50",resposta:false},
-              {Alternativa:"1",resposta:false},
-              {Alternativa:"10",resposta:true},
-              {Alternativa:"80",resposta:false}
+              {Alternativa:"A:50"},
+              {Alternativa:"B:1"},
+              {Alternativa:"C:10"},
+              {Alternativa:"D:80"}
             
 
             ]
@@ -42,13 +42,37 @@ let pergunta = [
          Questao:"5/5=",
          Alternativas:
             [
-              {Alternativa:"10",resposta:false},
-              {Alternativa:"2",resposta:false},
-              {Alternativa:"1",resposta:true},
-              {Alternativa:"4",resposta:false}
+              {Alternativa:"A:10"},
+              {Alternativa:"B:2"},
+              {Alternativa:"C:1"},
+              {Alternativa:"D:4"}
             
 
             ]
 }]
+let respostas = ["A","B","C","D"]
+/*for (i=0;i<pergunta.length;i++){
+    let valor = prompt("Qual o valor ?")
+    if(respostas[i]==valor){
+        console.log("correto")
+    }else{
+        console.log("errado")
+        i=0
+    }
+}*/
+function loop (){
+    for (i=0;i<pergunta.length;i++){
+        let valor = prompt("Qual o valor ?")
+        if(respostas[i]==valor){
+            console.log("correto")
+        }else{
+            console.log("errado")
+            i=0
+        }
+    }
+}
+document.addEventListener("DOMContentLoaded",loop)
 
 
+
+//let pergunta1 = document.querySelector("firstQuest")
