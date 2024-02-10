@@ -10,7 +10,26 @@ body {
     text-align: center;
    
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.header {
+    background-color: #0d0d0e; /* Cor de fundo do cabeçalho */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno do cabeçalho */
+}
+
+.header-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+}
 
 
 #contentQuiz {
