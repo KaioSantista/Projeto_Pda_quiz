@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: pointer;
 }
 body {
     background-color: #000;
@@ -23,6 +22,7 @@ body {
 #content {
     border: 2px solid #fff;
     border-radius: 10px;
+    padding: 20px;
 }
 
 #answerContent {
@@ -33,10 +33,21 @@ body {
 }
 
 .answer {
-    border: 2px solid blueviolet;
+    border: 2px solid #8a2be2;
     padding: 5px;
     width: 150px;
     margin: 10px;
     text-align: center;
     border-radius: 9px;
+}
+
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px 0px #8a2be8;
+    border: transparent;
 }

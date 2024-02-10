@@ -60,6 +60,8 @@ let respostas = ["A","B","C","D"]
         i=0
     }
 }*/
+
+/*
 function loop (){
     for (i=0;i<pergunta.length;i++){
         let valor = prompt("Qual o valor ?")
@@ -72,7 +74,7 @@ function loop (){
     }
 }
 document.addEventListener("DOMContentLoaded",loop)
-
+*/
 
 
 //let pergunta1 = document.querySelector("firstQuest")
