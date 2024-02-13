@@ -25,6 +25,12 @@ body {
     padding: 20px;
 }
 
+.quest {
+    max-width: 1080px;
+    margin: 10px;
+    text-justify: auto;
+}
+
 #answerContent {
     display: flex;
     gap: 52px;
