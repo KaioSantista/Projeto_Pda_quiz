@@ -66,6 +66,22 @@ function loop (){
     }
 }
 
+function resposta() {
+  var respostaUsuario = prompt('Escolha a alternativa (A, B, C ou D):');
+  const respostaCorreta = respostas[indice];
+  
+  if (respostaUsuario == respostaCorreta.toUpperCase()) {
+      alert('Acertou!');
+      indice++;
+      loop();
+  }else{
+      alert('Errou')
+      //location.reload()
+      indice = 0
+      loop();
+  }
+}
+
 document.addEventListener("DOMContentLoaded",loop)
 
 function dado() {
