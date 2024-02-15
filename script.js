@@ -65,5 +65,67 @@ function loop (){
         alert("Ganhouuuu, sabe muitoooo!!!")
     }
 }
+
 document.addEventListener("DOMContentLoaded",loop)
+
+function dado() {
+    document.getElementById('content').innerHTML = ' '
+
+    const questionsDiv = document.createElement('div');
+    questionsDiv.className = 'questions';
+
+    const questH1 = document.createElement('h1');
+    questH1.id = 'quest';
+    questH1.textContent = pergunta[indice].Questao;
+
+    questionsDiv.appendChild(questH1);
+
+    const answerContentDiv = document.createElement('div');
+    answerContentDiv.id = 'answerContent';
+
+    const firstQuestDiv = document.createElement('div');
+    firstQuestDiv.className = 'firstQuest';
+
+    const answerH2_1 = document.createElement('h2');
+    answerH2_1.className = 'answer';
+    answerH2_1.textContent = pergunta[indice].Alternativas[0].Alternativa;
+
+    const answerH2_2 = document.createElement('h2');
+    answerH2_2.className = 'answer';
+    answerH2_2.textContent = pergunta[indice].Alternativas[1].Alternativa;
+
+    firstQuestDiv.appendChild(answerH2_1);
+    firstQuestDiv.appendChild(answerH2_2);
+
+    const secondQuestDiv = document.createElement('div');
+    secondQuestDiv.className = 'secondQuest';
+
+    const answerH2_3 = document.createElement('h2');
+    answerH2_3.className = 'answer';
+    answerH2_3.textContent = pergunta[indice].Alternativas[2].Alternativa;
+
+    const answerH2_4 = document.createElement('h2');
+    answerH2_4.className = 'answer';
+    answerH2_4.textContent = pergunta[indice].Alternativas[3].Alternativa;
+
+    secondQuestDiv.appendChild(answerH2_3);
+    secondQuestDiv.appendChild(answerH2_4);
+
+    answerContentDiv.appendChild(firstQuestDiv);
+    answerContentDiv.appendChild(secondQuestDiv);
+
+    const btnDiv = document.createElement('div');
+    btnDiv.className = 'btn';
+
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'nextBtn';
+    nextBtn.textContent = 'NEXT';
+    nextBtn.onclick = resposta;
+
+    btnDiv.appendChild(nextBtn);
+
+    document.getElementById('content').appendChild(questionsDiv);
+    document.getElementById('content').appendChild(answerContentDiv);
+    document.getElementById('content').appendChild(btnDiv);
+}
 
