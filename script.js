@@ -51,30 +51,19 @@ let pergunta = [
             ]
 }]
 let respostas = ["A","B","C","D"]
-/*for (i=0;i<pergunta.length;i++){
-    let valor = prompt("Qual o valor ?")
-    if(respostas[i]==valor){
-        console.log("correto")
-    }else{
-        console.log("errado")
-        i=0
-    }
-}*/
 
-/*
+var indice = 0
+
+
 function loop (){
-    for (i=0;i<pergunta.length;i++){
-        let valor = prompt("Qual o valor ?")
-        if(respostas[i]==valor){
-            console.log("correto")
-        }else{
-            console.log("errado")
-            i=0
-        }
+    for (;indice < pergunta.length;) {
+        dado();  
+        console.log(index);
+    }
+    
+    if(indice == pergunta.length){
+        alert("Ganhouuuu, sabe muitoooo!!!")
     }
 }
 document.addEventListener("DOMContentLoaded",loop)
-*/
 
-
-//let pergunta1 = document.querySelector("firstQuest")
