@@ -135,7 +135,7 @@ function dado() {
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'nextBtn';
-    nextBtn.textContent = 'NEXT';
+    nextBtn.textContent = 'Responder';
     nextBtn.onclick = resposta;
 
     btnDiv.appendChild(nextBtn);
