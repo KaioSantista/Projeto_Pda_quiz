@@ -54,6 +54,23 @@ let respostas = ["A","B","C","D"]
 
 var indice = 0
 
+function msg(dado, dado1){
+  document.getElementById('content').innerHTML = ' '
+  
+  const questionsDiv = document.createElement('div');
+  questionsDiv.className = 'questions';
+
+  const questH1 = document.createElement('h1');
+  questH1.id = 'quest';
+  questH1.textContent = `${dado}, você ${dado1}!! A página será recarregada.`;
+  
+  questionsDiv.appendChild(questH1);
+
+  document.getElementById('content').appendChild(questionsDiv);
+
+
+}
+
 
 function loop (){
     for (;indice < pergunta.length;) {
@@ -62,7 +79,10 @@ function loop (){
     }
     
     if(indice == pergunta.length){
-        alert("Ganhouuuu, sabe muitoooo!!!")
+      msg("Parabéns","ganhou")
+      setTimeout(() => {
+        location.reload()
+      }, 5000);
     }
 }
 
@@ -75,10 +95,10 @@ function resposta() {
       indice++;
       loop();
   }else{
-      alert('Errou')
-      //location.reload()
-      indice = 0
-      loop();
+      msg("Tente outra vez","errou")
+      setTimeout(() => {
+        location.reload()
+      }, 5000);
   }
 }
 
