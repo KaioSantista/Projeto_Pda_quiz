@@ -44,8 +44,8 @@ let pergunta = [
             [
               {Alternativa:"A:10"},
               {Alternativa:"B:2"},
-              {Alternativa:"C:1"},
-              {Alternativa:"D:4"}
+              {Alternativa:"C:4"},
+              {Alternativa:"D:1"}
             
 
             ]
@@ -90,7 +90,7 @@ function resposta() {
   var respostaUsuario = prompt('Escolha a alternativa (A, B, C ou D):');
   const respostaCorreta = respostas[indice];
   
-  if (respostaUsuario == respostaCorreta.toUpperCase()) {
+  if (respostaUsuario.toUpperCase() == respostaCorreta) {
       alert('Acertou!');
       indice++;
       loop();
